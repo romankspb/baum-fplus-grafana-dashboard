@@ -43,7 +43,7 @@ modules:
       - 1.3.6.1.4.1.91919191.1.3.6.5  # baumStatsFC
 ```
 
-4. Сгенерировать конфигурационный файл snmp-baum.yaml для snmp_exporter
+4. Сгенерировать для snmp_exporter конфигурационный файл snmp-baum.yml
 
 ```
 $ ./snmp_exporter/generator/generator generate -m /usr/share/snmp/mibs -m ./snmp_exporter/generator/mibs-baum -g ./snmp_exporter/generator/generator-baum.yml -o /tmp/snmp-baum.yml
@@ -57,7 +57,7 @@ ts=2024-03-28T10:09:05.572Z caller=main.go:93 level=info msg="Config written" fi
 
 1. Скачайте дистрибутив snmp_exporter https://github.com/prometheus/snmp_exporter/releases, исполняемый файл скопируйте в директорию /usr/local/sbin/
 
-2. Конфигурационный файл экспортера snmp.yaml скопируйте из дистрибутива в директорию /etc/prometheus_snmp_exporter
+2. Конфигурационный файл экспортера snmp.yml скопируйте из дистрибутива в директорию /etc/prometheus_snmp_exporter
 
 3. Создайте systemd unit файл /etc/systemd/system/snmp_exporter.service
 
@@ -81,7 +81,7 @@ WantedBy=multi-user.target
 
 ```
 $ sudo systemctl daemon-reload
-$ sudo systemctl enable ---now snmp_exporter
+$ sudo systemctl enable --now snmp_exporter
 ```
 
 5. Проверка работы snmp_xporter
