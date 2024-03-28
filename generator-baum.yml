@@ -1,0 +1,17 @@
+---
+modules:
+  baum:
+    walk:
+      - 1.3.6.1.4.1.91919191          # baum
+      - 1.3.6.1.4.1.91919191.1        # baumProduct
+      - 1.3.6.1.4.1.91919191.1.3      # baumParameter
+      - 1.3.6.1.4.1.91919191.1.3.6    # baumStats
+      - 1.3.6.1.4.1.91919191.1.3.7    # baumStatsNode
+      - 1.3.6.1.4.1.91919191.1.3.8    # baumStatsJbod
+      - 1.3.6.1.4.1.91919191.1.3.9    # baumStatsDisks
+      - 1.3.6.1.4.1.91919191.1.3.10   # baumStatsNodeAID
+      - 1.3.6.1.4.1.91919191.1.3.6.1  # baumStatsCommon
+      - 1.3.6.1.4.1.91919191.1.3.6.2  # baumStatsPools
+      - 1.3.6.1.4.1.91919191.1.3.6.3  # baumStatsUsedDisk
+      - 1.3.6.1.4.1.91919191.1.3.6.4  # baumStatsZvols
+      - 1.3.6.1.4.1.91919191.1.3.6.5  # baumStatsFC

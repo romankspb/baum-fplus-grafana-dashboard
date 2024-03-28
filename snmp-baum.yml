@@ -1,0 +1,1040 @@
+# WARNING: This file was auto-generated using snmp_exporter generator, manual changes will be lost.
+modules:
+  baum:
+    walk:
+    - 1.3.6.1.4.1.91919191
+    metrics:
+    - name: baumStatsCommonCacheL1Hit
+      oid: 1.3.6.1.4.1.91919191.1.3.6.1.1
+      type: counter
+      help: L1 cache hit in percent - 1.3.6.1.4.1.91919191.1.3.6.1.1
+    - name: baumStatsCommonCacheL2Hit
+      oid: 1.3.6.1.4.1.91919191.1.3.6.1.2
+      type: counter
+      help: L2 cache hit in percent - 1.3.6.1.4.1.91919191.1.3.6.1.2
+    - name: baumStatsCommonCacheReadBack
+      oid: 1.3.6.1.4.1.91919191.1.3.6.1.3
+      type: counter
+      help: Read back of cache (B/s) - 1.3.6.1.4.1.91919191.1.3.6.1.3
+    - name: baumStatsCommonCacheWriteBack
+      oid: 1.3.6.1.4.1.91919191.1.3.6.1.4
+      type: counter
+      help: Write back of cache (B/s) - 1.3.6.1.4.1.91919191.1.3.6.1.4
+    - name: baumStatsPoolsCount
+      oid: 1.3.6.1.4.1.91919191.1.3.6.2.1
+      type: counter
+      help: Count of pool stats - 1.3.6.1.4.1.91919191.1.3.6.2.1
+    - name: baumStatsPoolsIndex
+      oid: 1.3.6.1.4.1.91919191.1.3.6.2.2.1.1
+      type: gauge
+      help: Index of pool - 1.3.6.1.4.1.91919191.1.3.6.2.2.1.1
+      indexes:
+      - labelname: baumStatsPoolsIndex
+        type: gauge
+    - name: baumStatsPoolsName
+      oid: 1.3.6.1.4.1.91919191.1.3.6.2.2.1.2
+      type: DisplayString
+      help: Name of pool - 1.3.6.1.4.1.91919191.1.3.6.2.2.1.2
+      indexes:
+      - labelname: baumStatsPoolsIndex
+        type: gauge
+    - name: baumStatsPoolsSize
+      oid: 1.3.6.1.4.1.91919191.1.3.6.2.2.1.3
+      type: counter
+      help: Size of pool - 1.3.6.1.4.1.91919191.1.3.6.2.2.1.3
+      indexes:
+      - labelname: baumStatsPoolsIndex
+        type: gauge
+    - name: baumStatsPoolsFree
+      oid: 1.3.6.1.4.1.91919191.1.3.6.2.2.1.4
+      type: counter
+      help: Free space of pool - 1.3.6.1.4.1.91919191.1.3.6.2.2.1.4
+      indexes:
+      - labelname: baumStatsPoolsIndex
+        type: gauge
+    - name: baumStatsPoolsAllocated
+      oid: 1.3.6.1.4.1.91919191.1.3.6.2.2.1.5
+      type: counter
+      help: Allocated space of pool - 1.3.6.1.4.1.91919191.1.3.6.2.2.1.5
+      indexes:
+      - labelname: baumStatsPoolsIndex
+        type: gauge
+    - name: baumStatsPoolsFragmentation
+      oid: 1.3.6.1.4.1.91919191.1.3.6.2.2.1.6
+      type: counter
+      help: Pool fragmentation - 1.3.6.1.4.1.91919191.1.3.6.2.2.1.6
+      indexes:
+      - labelname: baumStatsPoolsIndex
+        type: gauge
+    - name: baumStatsPoolsRead
+      oid: 1.3.6.1.4.1.91919191.1.3.6.2.2.1.7
+      type: counter
+      help: Read speed of pool (B/s) - 1.3.6.1.4.1.91919191.1.3.6.2.2.1.7
+      indexes:
+      - labelname: baumStatsPoolsIndex
+        type: gauge
+    - name: baumStatsPoolsWrite
+      oid: 1.3.6.1.4.1.91919191.1.3.6.2.2.1.8
+      type: counter
+      help: Write speed of pool (B/s) - 1.3.6.1.4.1.91919191.1.3.6.2.2.1.8
+      indexes:
+      - labelname: baumStatsPoolsIndex
+        type: gauge
+    - name: baumStatsPoolsReadIOPS
+      oid: 1.3.6.1.4.1.91919191.1.3.6.2.2.1.9
+      type: counter
+      help: Read speed of pool (IO/s) - 1.3.6.1.4.1.91919191.1.3.6.2.2.1.9
+      indexes:
+      - labelname: baumStatsPoolsIndex
+        type: gauge
+    - name: baumStatsPoolsWriteIOPS
+      oid: 1.3.6.1.4.1.91919191.1.3.6.2.2.1.10
+      type: counter
+      help: Write speed of pool (IO/s) - 1.3.6.1.4.1.91919191.1.3.6.2.2.1.10
+      indexes:
+      - labelname: baumStatsPoolsIndex
+        type: gauge
+    - name: baumStatsPoolsStatus
+      oid: 1.3.6.1.4.1.91919191.1.3.6.2.2.1.11
+      type: counter
+      help: Status of pool - 1.3.6.1.4.1.91919191.1.3.6.2.2.1.11
+      indexes:
+      - labelname: baumStatsPoolsIndex
+        type: gauge
+    - name: baumStatsUsedDiskCount
+      oid: 1.3.6.1.4.1.91919191.1.3.6.3.1
+      type: counter
+      help: Count of used disk stats - 1.3.6.1.4.1.91919191.1.3.6.3.1
+    - name: baumStatsUsedDiskIndex
+      oid: 1.3.6.1.4.1.91919191.1.3.6.3.2.1.1
+      type: gauge
+      help: Index of used disk stats - 1.3.6.1.4.1.91919191.1.3.6.3.2.1.1
+      indexes:
+      - labelname: baumStatsUsedDiskIndex
+        type: gauge
+    - name: baumStatsUsedDiskName
+      oid: 1.3.6.1.4.1.91919191.1.3.6.3.2.1.2
+      type: DisplayString
+      help: Name of used disk - 1.3.6.1.4.1.91919191.1.3.6.3.2.1.2
+      indexes:
+      - labelname: baumStatsUsedDiskIndex
+        type: gauge
+    - name: baumStatsUsedDiskReadBW
+      oid: 1.3.6.1.4.1.91919191.1.3.6.3.2.1.3
+      type: counter
+      help: Reading used data from disk - 1.3.6.1.4.1.91919191.1.3.6.3.2.1.3
+      indexes:
+      - labelname: baumStatsUsedDiskIndex
+        type: gauge
+    - name: baumStatsUsedDiskWriteBW
+      oid: 1.3.6.1.4.1.91919191.1.3.6.3.2.1.4
+      type: counter
+      help: Write data to used disk - 1.3.6.1.4.1.91919191.1.3.6.3.2.1.4
+      indexes:
+      - labelname: baumStatsUsedDiskIndex
+        type: gauge
+    - name: baumStatsUsedDiskReadIO
+      oid: 1.3.6.1.4.1.91919191.1.3.6.3.2.1.5
+      type: counter
+      help: Reading IO - 1.3.6.1.4.1.91919191.1.3.6.3.2.1.5
+      indexes:
+      - labelname: baumStatsUsedDiskIndex
+        type: gauge
+    - name: baumStatsUsedDiskWriteIO
+      oid: 1.3.6.1.4.1.91919191.1.3.6.3.2.1.6
+      type: counter
+      help: Write IO - 1.3.6.1.4.1.91919191.1.3.6.3.2.1.6
+      indexes:
+      - labelname: baumStatsUsedDiskIndex
+        type: gauge
+    - name: baumStatsUsedDiskReadWait
+      oid: 1.3.6.1.4.1.91919191.1.3.6.3.2.1.7
+      type: counter
+      help: Read waiting - 1.3.6.1.4.1.91919191.1.3.6.3.2.1.7
+      indexes:
+      - labelname: baumStatsUsedDiskIndex
+        type: gauge
+    - name: baumStatsUsedDiskWriteWait
+      oid: 1.3.6.1.4.1.91919191.1.3.6.3.2.1.8
+      type: counter
+      help: Write waiting - 1.3.6.1.4.1.91919191.1.3.6.3.2.1.8
+      indexes:
+      - labelname: baumStatsUsedDiskIndex
+        type: gauge
+    - name: baumStatsZvolsCount
+      oid: 1.3.6.1.4.1.91919191.1.3.6.4.1
+      type: counter
+      help: Count of zvols stats - 1.3.6.1.4.1.91919191.1.3.6.4.1
+    - name: baumStatsZvolsIndex
+      oid: 1.3.6.1.4.1.91919191.1.3.6.4.2.1.1
+      type: gauge
+      help: Index of zvol - 1.3.6.1.4.1.91919191.1.3.6.4.2.1.1
+      indexes:
+      - labelname: baumStatsZvolsIndex
+        type: gauge
+    - name: baumStatsZvolsName
+      oid: 1.3.6.1.4.1.91919191.1.3.6.4.2.1.2
+      type: DisplayString
+      help: Name of zvol - 1.3.6.1.4.1.91919191.1.3.6.4.2.1.2
+      indexes:
+      - labelname: baumStatsZvolsIndex
+        type: gauge
+    - name: baumStatsZvolsReadBW
+      oid: 1.3.6.1.4.1.91919191.1.3.6.4.2.1.3
+      type: counter
+      help: Reading data from zvol - 1.3.6.1.4.1.91919191.1.3.6.4.2.1.3
+      indexes:
+      - labelname: baumStatsZvolsIndex
+        type: gauge
+    - name: baumStatsZvolsWriteBW
+      oid: 1.3.6.1.4.1.91919191.1.3.6.4.2.1.4
+      type: counter
+      help: Write data to zvol - 1.3.6.1.4.1.91919191.1.3.6.4.2.1.4
+      indexes:
+      - labelname: baumStatsZvolsIndex
+        type: gauge
+    - name: baumStatsZvolsReadIO
+      oid: 1.3.6.1.4.1.91919191.1.3.6.4.2.1.5
+      type: counter
+      help: Reading IO - 1.3.6.1.4.1.91919191.1.3.6.4.2.1.5
+      indexes:
+      - labelname: baumStatsZvolsIndex
+        type: gauge
+    - name: baumStatsZvolsWriteIO
+      oid: 1.3.6.1.4.1.91919191.1.3.6.4.2.1.6
+      type: counter
+      help: Write IO - 1.3.6.1.4.1.91919191.1.3.6.4.2.1.6
+      indexes:
+      - labelname: baumStatsZvolsIndex
+        type: gauge
+    - name: baumStatsZvolsReadWait
+      oid: 1.3.6.1.4.1.91919191.1.3.6.4.2.1.7
+      type: counter
+      help: Read waiting - 1.3.6.1.4.1.91919191.1.3.6.4.2.1.7
+      indexes:
+      - labelname: baumStatsZvolsIndex
+        type: gauge
+    - name: baumStatsZvolsWriteWait
+      oid: 1.3.6.1.4.1.91919191.1.3.6.4.2.1.8
+      type: counter
+      help: Write waiting - 1.3.6.1.4.1.91919191.1.3.6.4.2.1.8
+      indexes:
+      - labelname: baumStatsZvolsIndex
+        type: gauge
+    - name: baumStatsZvolsVolsize
+      oid: 1.3.6.1.4.1.91919191.1.3.6.4.2.1.9
+      type: DisplayString
+      help: Volsize by volume - 1.3.6.1.4.1.91919191.1.3.6.4.2.1.9
+      indexes:
+      - labelname: baumStatsZvolsIndex
+        type: gauge
+    - name: baumStatsZvolsLogicalused
+      oid: 1.3.6.1.4.1.91919191.1.3.6.4.2.1.10
+      type: DisplayString
+      help: Logicalused by volume - 1.3.6.1.4.1.91919191.1.3.6.4.2.1.10
+      indexes:
+      - labelname: baumStatsZvolsIndex
+        type: gauge
+    - name: baumStatsZvolsRefreservation
+      oid: 1.3.6.1.4.1.91919191.1.3.6.4.2.1.11
+      type: DisplayString
+      help: Volume reserve on pool - 1.3.6.1.4.1.91919191.1.3.6.4.2.1.11
+      indexes:
+      - labelname: baumStatsZvolsIndex
+        type: gauge
+    - name: baumStatsZvolsUsedbydataset
+      oid: 1.3.6.1.4.1.91919191.1.3.6.4.2.1.12
+      type: DisplayString
+      help: Used space by dataset - 1.3.6.1.4.1.91919191.1.3.6.4.2.1.12
+      indexes:
+      - labelname: baumStatsZvolsIndex
+        type: gauge
+    - name: baumStatsZvolsUsedbysnapshots
+      oid: 1.3.6.1.4.1.91919191.1.3.6.4.2.1.13
+      type: DisplayString
+      help: Used space by snapshots - 1.3.6.1.4.1.91919191.1.3.6.4.2.1.13
+      indexes:
+      - labelname: baumStatsZvolsIndex
+        type: gauge
+    - name: baumStatsFCCount
+      oid: 1.3.6.1.4.1.91919191.1.3.6.5.1
+      type: counter
+      help: Count of FC stats - 1.3.6.1.4.1.91919191.1.3.6.5.1
+    - name: baumStatsFCIndex
+      oid: 1.3.6.1.4.1.91919191.1.3.6.5.2.1.1
+      type: gauge
+      help: Index of FC - 1.3.6.1.4.1.91919191.1.3.6.5.2.1.1
+      indexes:
+      - labelname: baumStatsFCIndex
+        type: gauge
+    - name: baumStatsFCTarget
+      oid: 1.3.6.1.4.1.91919191.1.3.6.5.2.1.2
+      type: DisplayString
+      help: Target of FC - 1.3.6.1.4.1.91919191.1.3.6.5.2.1.2
+      indexes:
+      - labelname: baumStatsFCIndex
+        type: gauge
+    - name: baumStatsFCRead
+      oid: 1.3.6.1.4.1.91919191.1.3.6.5.2.1.3
+      type: counter
+      help: Read speed of FC (B/s) - 1.3.6.1.4.1.91919191.1.3.6.5.2.1.3
+      indexes:
+      - labelname: baumStatsFCIndex
+        type: gauge
+    - name: baumStatsFCWrite
+      oid: 1.3.6.1.4.1.91919191.1.3.6.5.2.1.4
+      type: counter
+      help: Write speed of FC (B/s) - 1.3.6.1.4.1.91919191.1.3.6.5.2.1.4
+      indexes:
+      - labelname: baumStatsFCIndex
+        type: gauge
+    - name: baumStatsFCReadIOPS
+      oid: 1.3.6.1.4.1.91919191.1.3.6.5.2.1.5
+      type: counter
+      help: Read speed of FC (IO/s) - 1.3.6.1.4.1.91919191.1.3.6.5.2.1.5
+      indexes:
+      - labelname: baumStatsFCIndex
+        type: gauge
+    - name: baumStatsFCWriteIOPS
+      oid: 1.3.6.1.4.1.91919191.1.3.6.5.2.1.6
+      type: counter
+      help: Write speed of FC (IO/s) - 1.3.6.1.4.1.91919191.1.3.6.5.2.1.6
+      indexes:
+      - labelname: baumStatsFCIndex
+        type: gauge
+    - name: baumStatsFCInitiatorCount
+      oid: 1.3.6.1.4.1.91919191.1.3.6.5.2.1.7
+      type: counter
+      help: Count initiator of FC stats - 1.3.6.1.4.1.91919191.1.3.6.5.2.1.7
+      indexes:
+      - labelname: baumStatsFCIndex
+        type: gauge
+    - name: baumStatsFCInitiatorIndex
+      oid: 1.3.6.1.4.1.91919191.1.3.6.5.3.1.1
+      type: gauge
+      help: Index initiator of FC - 1.3.6.1.4.1.91919191.1.3.6.5.3.1.1
+      indexes:
+      - labelname: baumStatsFCIndex
+        type: gauge
+      - labelname: baumStatsFCInitiatorIndex
+        type: gauge
+    - name: baumStatsFCInitiatorName
+      oid: 1.3.6.1.4.1.91919191.1.3.6.5.3.1.2
+      type: DisplayString
+      help: Name of initiator - 1.3.6.1.4.1.91919191.1.3.6.5.3.1.2
+      indexes:
+      - labelname: baumStatsFCIndex
+        type: gauge
+      - labelname: baumStatsFCInitiatorIndex
+        type: gauge
+    - name: baumStatsFCInitiatorRead
+      oid: 1.3.6.1.4.1.91919191.1.3.6.5.3.1.3
+      type: counter
+      help: Read speed initiator of FC (B/s) - 1.3.6.1.4.1.91919191.1.3.6.5.3.1.3
+      indexes:
+      - labelname: baumStatsFCIndex
+        type: gauge
+      - labelname: baumStatsFCInitiatorIndex
+        type: gauge
+    - name: baumStatsFCInitiatorWrite
+      oid: 1.3.6.1.4.1.91919191.1.3.6.5.3.1.4
+      type: counter
+      help: Write speed initiator of FC (B/s) - 1.3.6.1.4.1.91919191.1.3.6.5.3.1.4
+      indexes:
+      - labelname: baumStatsFCIndex
+        type: gauge
+      - labelname: baumStatsFCInitiatorIndex
+        type: gauge
+    - name: baumStatsFCInitiatorReadIOPS
+      oid: 1.3.6.1.4.1.91919191.1.3.6.5.3.1.5
+      type: counter
+      help: Read speed initiator of FC (IO/s) - 1.3.6.1.4.1.91919191.1.3.6.5.3.1.5
+      indexes:
+      - labelname: baumStatsFCIndex
+        type: gauge
+      - labelname: baumStatsFCInitiatorIndex
+        type: gauge
+    - name: baumStatsFCInitiatorWriteIOPS
+      oid: 1.3.6.1.4.1.91919191.1.3.6.5.3.1.6
+      type: counter
+      help: Write speed initiator of FC (IO/s) - 1.3.6.1.4.1.91919191.1.3.6.5.3.1.6
+      indexes:
+      - labelname: baumStatsFCIndex
+        type: gauge
+      - labelname: baumStatsFCInitiatorIndex
+        type: gauge
+    - name: baumStatsNodeCount
+      oid: 1.3.6.1.4.1.91919191.1.3.7.1
+      type: counter
+      help: Count of node - 1.3.6.1.4.1.91919191.1.3.7.1
+    - name: baumStatsNodeIndex
+      oid: 1.3.6.1.4.1.91919191.1.3.7.2.1.1
+      type: gauge
+      help: Index of node stats - 1.3.6.1.4.1.91919191.1.3.7.2.1.1
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+    - name: baumStatsNodeName
+      oid: 1.3.6.1.4.1.91919191.1.3.7.2.1.2
+      type: DisplayString
+      help: Name of node - 1.3.6.1.4.1.91919191.1.3.7.2.1.2
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+    - name: baumStatsNodeUptime
+      oid: 1.3.6.1.4.1.91919191.1.3.7.2.1.3
+      type: counter
+      help: Uptime node - 1.3.6.1.4.1.91919191.1.3.7.2.1.3
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+    - name: baumStatsNodeCPULoad
+      oid: 1.3.6.1.4.1.91919191.1.3.7.2.1.4
+      type: counter
+      help: Node CPU load - 1.3.6.1.4.1.91919191.1.3.7.2.1.4
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+    - name: baumStatsNodeCPUCount
+      oid: 1.3.6.1.4.1.91919191.1.3.7.2.1.5
+      type: counter
+      help: Node CPU count - 1.3.6.1.4.1.91919191.1.3.7.2.1.5
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+    - name: baumStatsNodeCoolerCount
+      oid: 1.3.6.1.4.1.91919191.1.3.7.2.1.6
+      type: counter
+      help: Node cooler count - 1.3.6.1.4.1.91919191.1.3.7.2.1.6
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+    - name: baumStatsNodePSUCount
+      oid: 1.3.6.1.4.1.91919191.1.3.7.2.1.7
+      type: counter
+      help: Node psu count - 1.3.6.1.4.1.91919191.1.3.7.2.1.7
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+    - name: baumStatsNodeSASBackplaneCount
+      oid: 1.3.6.1.4.1.91919191.1.3.7.2.1.8
+      type: counter
+      help: Node sas backplane count - 1.3.6.1.4.1.91919191.1.3.7.2.1.8
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+    - name: baumStatsNodeSASPortCount
+      oid: 1.3.6.1.4.1.91919191.1.3.7.2.1.9
+      type: counter
+      help: Node sas port count - 1.3.6.1.4.1.91919191.1.3.7.2.1.9
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+    - name: baumStatsNodeFCPortCount
+      oid: 1.3.6.1.4.1.91919191.1.3.7.2.1.10
+      type: counter
+      help: Node fc port count - 1.3.6.1.4.1.91919191.1.3.7.2.1.10
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+    - name: baumStatsNodeTotalRam
+      oid: 1.3.6.1.4.1.91919191.1.3.7.2.1.11
+      type: counter
+      help: Total RAM - 1.3.6.1.4.1.91919191.1.3.7.2.1.11
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+    - name: baumStatsNodeUsedRam
+      oid: 1.3.6.1.4.1.91919191.1.3.7.2.1.12
+      type: counter
+      help: Used RAM - 1.3.6.1.4.1.91919191.1.3.7.2.1.12
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+    - name: baumStatsNodeEthernetPortCount
+      oid: 1.3.6.1.4.1.91919191.1.3.7.2.1.13
+      type: counter
+      help: Eth port total count - 1.3.6.1.4.1.91919191.1.3.7.2.1.13
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+    - name: baumStatsNodeCPUIndex
+      oid: 1.3.6.1.4.1.91919191.1.3.7.3.1.1
+      type: gauge
+      help: Index cpu of node stats - 1.3.6.1.4.1.91919191.1.3.7.3.1.1
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeCPUIndex
+        type: gauge
+    - name: baumStatsNodeCPUName
+      oid: 1.3.6.1.4.1.91919191.1.3.7.3.1.2
+      type: DisplayString
+      help: Name cpu of node - 1.3.6.1.4.1.91919191.1.3.7.3.1.2
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeCPUIndex
+        type: gauge
+    - name: baumStatsNodeCPUCurrentTemperature
+      oid: 1.3.6.1.4.1.91919191.1.3.7.3.1.3
+      type: counter
+      help: Current temperature cpu of node stats - 1.3.6.1.4.1.91919191.1.3.7.3.1.3
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeCPUIndex
+        type: gauge
+    - name: baumStatsNodeCPUUpperCriticalTemperature
+      oid: 1.3.6.1.4.1.91919191.1.3.7.3.1.4
+      type: counter
+      help: Upper critical temperature cpu of node stats - 1.3.6.1.4.1.91919191.1.3.7.3.1.4
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeCPUIndex
+        type: gauge
+    - name: baumStatsNodeCPUUpperNonRecoverable
+      oid: 1.3.6.1.4.1.91919191.1.3.7.3.1.5
+      type: counter
+      help: Upper non recoverable temperature cpu of node stats - 1.3.6.1.4.1.91919191.1.3.7.3.1.5
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeCPUIndex
+        type: gauge
+    - name: baumStatsNodeCPULowerNonCritical
+      oid: 1.3.6.1.4.1.91919191.1.3.7.3.1.6
+      type: counter
+      help: Lower non critical temperature cpu of node stats - 1.3.6.1.4.1.91919191.1.3.7.3.1.6
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeCPUIndex
+        type: gauge
+    - name: baumStatsNodeCPULowerCritical
+      oid: 1.3.6.1.4.1.91919191.1.3.7.3.1.7
+      type: counter
+      help: Lower critical temperature cpu of node stats - 1.3.6.1.4.1.91919191.1.3.7.3.1.7
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeCPUIndex
+        type: gauge
+    - name: baumStatsNodeCPUStatus
+      oid: 1.3.6.1.4.1.91919191.1.3.7.3.1.8
+      type: counter
+      help: cpu node status (temperature) - 1.3.6.1.4.1.91919191.1.3.7.3.1.8
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeCPUIndex
+        type: gauge
+    - name: baumStatsNodeCoolerIndex
+      oid: 1.3.6.1.4.1.91919191.1.3.7.4.1.1
+      type: gauge
+      help: Index cooler of node stats - 1.3.6.1.4.1.91919191.1.3.7.4.1.1
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeCoolerIndex
+        type: gauge
+    - name: baumStatsNodeCoolerName
+      oid: 1.3.6.1.4.1.91919191.1.3.7.4.1.2
+      type: DisplayString
+      help: Name cooler of node - 1.3.6.1.4.1.91919191.1.3.7.4.1.2
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeCoolerIndex
+        type: gauge
+    - name: baumStatsNodeCoolerStatus
+      oid: 1.3.6.1.4.1.91919191.1.3.7.4.1.3
+      type: counter
+      help: Status cooler of node stats - 1.3.6.1.4.1.91919191.1.3.7.4.1.3
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeCoolerIndex
+        type: gauge
+    - name: baumStatsNodeCoolerRPM
+      oid: 1.3.6.1.4.1.91919191.1.3.7.4.1.4
+      type: counter
+      help: Speed cooler of node stats - 1.3.6.1.4.1.91919191.1.3.7.4.1.4
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeCoolerIndex
+        type: gauge
+    - name: baumStatsNodeCoolerLowerCriticalRPM
+      oid: 1.3.6.1.4.1.91919191.1.3.7.4.1.5
+      type: counter
+      help: Lower critical speed cooler of node stats - 1.3.6.1.4.1.91919191.1.3.7.4.1.5
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeCoolerIndex
+        type: gauge
+    - name: baumStatsNodeCoolerLowerNonRecoverableRPM
+      oid: 1.3.6.1.4.1.91919191.1.3.7.4.1.6
+      type: counter
+      help: Lower non recoverable speed cooler of node stats - 1.3.6.1.4.1.91919191.1.3.7.4.1.6
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeCoolerIndex
+        type: gauge
+    - name: baumStatsNodeCoolerUpperCriticalRPM
+      oid: 1.3.6.1.4.1.91919191.1.3.7.4.1.7
+      type: counter
+      help: Upper critical speed cooler of node stats - 1.3.6.1.4.1.91919191.1.3.7.4.1.7
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeCoolerIndex
+        type: gauge
+    - name: baumStatsNodeCoolerUpperNonCriticalRPM
+      oid: 1.3.6.1.4.1.91919191.1.3.7.4.1.8
+      type: counter
+      help: Upper non critical speed cooler of node stats - 1.3.6.1.4.1.91919191.1.3.7.4.1.8
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeCoolerIndex
+        type: gauge
+    - name: baumStatsNodePSUIndex
+      oid: 1.3.6.1.4.1.91919191.1.3.7.5.1.1
+      type: gauge
+      help: Index psu of node stats - 1.3.6.1.4.1.91919191.1.3.7.5.1.1
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodePSUIndex
+        type: gauge
+    - name: baumStatsNodePSUName
+      oid: 1.3.6.1.4.1.91919191.1.3.7.5.1.2
+      type: DisplayString
+      help: Name psu of node - 1.3.6.1.4.1.91919191.1.3.7.5.1.2
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodePSUIndex
+        type: gauge
+    - name: baumStatsNodePSUStatus
+      oid: 1.3.6.1.4.1.91919191.1.3.7.5.1.3
+      type: counter
+      help: Name psu of node - 1.3.6.1.4.1.91919191.1.3.7.5.1.3
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodePSUIndex
+        type: gauge
+    - name: baumStatsNodePSUCurrentTemperature
+      oid: 1.3.6.1.4.1.91919191.1.3.7.5.1.4
+      type: counter
+      help: Temperature psu of node - 1.3.6.1.4.1.91919191.1.3.7.5.1.4
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodePSUIndex
+        type: gauge
+    - name: baumStatsNodePSUUpperCriticalTemperature
+      oid: 1.3.6.1.4.1.91919191.1.3.7.5.1.5
+      type: counter
+      help: Upper critical temperature psu of node - 1.3.6.1.4.1.91919191.1.3.7.5.1.5
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodePSUIndex
+        type: gauge
+    - name: baumStatsNodePSUUpperNonRecoverableTemperature
+      oid: 1.3.6.1.4.1.91919191.1.3.7.5.1.6
+      type: counter
+      help: Upper non recoverable temperature psu of node - 1.3.6.1.4.1.91919191.1.3.7.5.1.6
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodePSUIndex
+        type: gauge
+    - name: baumStatsNodeSASBackplaneIndex
+      oid: 1.3.6.1.4.1.91919191.1.3.7.6.1.1
+      type: gauge
+      help: Index sas backplane of node stats - 1.3.6.1.4.1.91919191.1.3.7.6.1.1
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeSASBackplaneIndex
+        type: gauge
+    - name: baumStatsNodeSASBackplaneName
+      oid: 1.3.6.1.4.1.91919191.1.3.7.6.1.2
+      type: DisplayString
+      help: Name sas backplane of node - 1.3.6.1.4.1.91919191.1.3.7.6.1.2
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeSASBackplaneIndex
+        type: gauge
+    - name: baumStatsNodeSASBackplaneStatus
+      oid: 1.3.6.1.4.1.91919191.1.3.7.6.1.3
+      type: counter
+      help: Status sas backplane of node - 1.3.6.1.4.1.91919191.1.3.7.6.1.3
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeSASBackplaneIndex
+        type: gauge
+    - name: baumStatsNodeSASBackplaneTemperature
+      oid: 1.3.6.1.4.1.91919191.1.3.7.6.1.4
+      type: counter
+      help: Temperature sas backplane of node stats - 1.3.6.1.4.1.91919191.1.3.7.6.1.4
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeSASBackplaneIndex
+        type: gauge
+    - name: baumStatsNodeSASBackplaneLowCriticalTemperature
+      oid: 1.3.6.1.4.1.91919191.1.3.7.6.1.5
+      type: counter
+      help: Low critical temperature sas backplane of node stats - 1.3.6.1.4.1.91919191.1.3.7.6.1.5
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeSASBackplaneIndex
+        type: gauge
+    - name: baumStatsNodeSASBackplaneHighCriticalTemperature
+      oid: 1.3.6.1.4.1.91919191.1.3.7.6.1.6
+      type: counter
+      help: High critical temperature sas backplane of node stats - 1.3.6.1.4.1.91919191.1.3.7.6.1.6
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeSASBackplaneIndex
+        type: gauge
+    - name: baumStatsNodeSASBackplaneLowWarningTemperature
+      oid: 1.3.6.1.4.1.91919191.1.3.7.6.1.7
+      type: counter
+      help: Low warning temperature sas backplane of node stats - 1.3.6.1.4.1.91919191.1.3.7.6.1.7
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeSASBackplaneIndex
+        type: gauge
+    - name: baumStatsNodeSASBackplaneHighWarningTemperature
+      oid: 1.3.6.1.4.1.91919191.1.3.7.6.1.8
+      type: counter
+      help: High warning temperature sas backplane of node stats - 1.3.6.1.4.1.91919191.1.3.7.6.1.8
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeSASBackplaneIndex
+        type: gauge
+    - name: baumStatsNodeSASPortIndex
+      oid: 1.3.6.1.4.1.91919191.1.3.7.7.1.1
+      type: gauge
+      help: Index sas port of node stats - 1.3.6.1.4.1.91919191.1.3.7.7.1.1
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeSASPortIndex
+        type: gauge
+    - name: baumStatsNodeSASPortName
+      oid: 1.3.6.1.4.1.91919191.1.3.7.7.1.2
+      type: DisplayString
+      help: Name sas port of node - 1.3.6.1.4.1.91919191.1.3.7.7.1.2
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeSASPortIndex
+        type: gauge
+    - name: baumStatsNodeSASPortStatus
+      oid: 1.3.6.1.4.1.91919191.1.3.7.7.1.3
+      type: counter
+      help: Status sas port of node - 1.3.6.1.4.1.91919191.1.3.7.7.1.3
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeSASPortIndex
+        type: gauge
+    - name: baumStatsNodeFCPortIndex
+      oid: 1.3.6.1.4.1.91919191.1.3.7.8.1.1
+      type: gauge
+      help: Index fc port of node stats - 1.3.6.1.4.1.91919191.1.3.7.8.1.1
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeFCPortIndex
+        type: gauge
+    - name: baumStatsNodeFCPortName
+      oid: 1.3.6.1.4.1.91919191.1.3.7.8.1.2
+      type: DisplayString
+      help: Name fc port of node - 1.3.6.1.4.1.91919191.1.3.7.8.1.2
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeFCPortIndex
+        type: gauge
+    - name: baumStatsNodeFCPortStatus
+      oid: 1.3.6.1.4.1.91919191.1.3.7.8.1.3
+      type: counter
+      help: Status fc port of node - 1.3.6.1.4.1.91919191.1.3.7.8.1.3
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeFCPortIndex
+        type: gauge
+    - name: baumStatsNodeFCPortLink
+      oid: 1.3.6.1.4.1.91919191.1.3.7.8.1.4
+      type: counter
+      help: Link fc port of node - 1.3.6.1.4.1.91919191.1.3.7.8.1.4
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeFCPortIndex
+        type: gauge
+    - name: baumStatsNodeFCPortSpeed
+      oid: 1.3.6.1.4.1.91919191.1.3.7.8.1.5
+      type: DisplayString
+      help: Speed fc port of node - 1.3.6.1.4.1.91919191.1.3.7.8.1.5
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeFCPortIndex
+        type: gauge
+    - name: baumStatsNodeEthernetPortIndex
+      oid: 1.3.6.1.4.1.91919191.1.3.7.9.1.1
+      type: gauge
+      help: Index - 1.3.6.1.4.1.91919191.1.3.7.9.1.1
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeEthernetPortIndex
+        type: gauge
+    - name: baumStatsNodeEthernetPortName
+      oid: 1.3.6.1.4.1.91919191.1.3.7.9.1.2
+      type: DisplayString
+      help: Eth port name - 1.3.6.1.4.1.91919191.1.3.7.9.1.2
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeEthernetPortIndex
+        type: gauge
+    - name: baumStatsNodeEthernetPortStatus
+      oid: 1.3.6.1.4.1.91919191.1.3.7.9.1.3
+      type: counter
+      help: Eth port status - 1.3.6.1.4.1.91919191.1.3.7.9.1.3
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeEthernetPortIndex
+        type: gauge
+    - name: baumStatsNodeEthernetLinkStatus
+      oid: 1.3.6.1.4.1.91919191.1.3.7.9.1.4
+      type: counter
+      help: Eth link status - 1.3.6.1.4.1.91919191.1.3.7.9.1.4
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeEthernetPortIndex
+        type: gauge
+    - name: baumStatsNodeEthernetPortSpeed
+      oid: 1.3.6.1.4.1.91919191.1.3.7.9.1.5
+      type: counter
+      help: Eth port max speed (Mb/s) - 1.3.6.1.4.1.91919191.1.3.7.9.1.5
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeEthernetPortIndex
+        type: gauge
+    - name: baumStatsNodeEthernetLinkSpeed
+      oid: 1.3.6.1.4.1.91919191.1.3.7.9.1.6
+      type: counter
+      help: Eth link max speed (Mb/s) - 1.3.6.1.4.1.91919191.1.3.7.9.1.6
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeEthernetPortIndex
+        type: gauge
+    - name: baumStatsNodeEthernetDataReceivingRate
+      oid: 1.3.6.1.4.1.91919191.1.3.7.9.1.7
+      type: counter
+      help: Data receiving rate (b/s) - 1.3.6.1.4.1.91919191.1.3.7.9.1.7
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeEthernetPortIndex
+        type: gauge
+    - name: baumStatsNodeEthernetDataTransmittingRate
+      oid: 1.3.6.1.4.1.91919191.1.3.7.9.1.8
+      type: counter
+      help: Data transmitting rate (b/s) - 1.3.6.1.4.1.91919191.1.3.7.9.1.8
+      indexes:
+      - labelname: baumStatsNodeIndex
+        type: gauge
+      - labelname: baumStatsNodeEthernetPortIndex
+        type: gauge
+    - name: baumStatsJbodCount
+      oid: 1.3.6.1.4.1.91919191.1.3.8.1
+      type: counter
+      help: Count of shelves - 1.3.6.1.4.1.91919191.1.3.8.1
+    - name: baumStatsJbodIndex
+      oid: 1.3.6.1.4.1.91919191.1.3.8.2.1.1
+      type: gauge
+      help: Index of shelves - 1.3.6.1.4.1.91919191.1.3.8.2.1.1
+      indexes:
+      - labelname: baumStatsJbodIndex
+        type: gauge
+    - name: baumStatsJbodName
+      oid: 1.3.6.1.4.1.91919191.1.3.8.2.1.2
+      type: DisplayString
+      help: Name of shelves - 1.3.6.1.4.1.91919191.1.3.8.2.1.2
+      indexes:
+      - labelname: baumStatsJbodIndex
+        type: gauge
+    - name: baumStatsJbodCoolerCount
+      oid: 1.3.6.1.4.1.91919191.1.3.8.2.1.3
+      type: counter
+      help: Count of coolers in a shelf - 1.3.6.1.4.1.91919191.1.3.8.2.1.3
+      indexes:
+      - labelname: baumStatsJbodIndex
+        type: gauge
+    - name: baumStatsJbodPSUCount
+      oid: 1.3.6.1.4.1.91919191.1.3.8.2.1.4
+      type: counter
+      help: Count of psu in a shelf - 1.3.6.1.4.1.91919191.1.3.8.2.1.4
+      indexes:
+      - labelname: baumStatsJbodIndex
+        type: gauge
+    - name: baumStatsJbodInternal
+      oid: 1.3.6.1.4.1.91919191.1.3.8.2.1.5
+      type: counter
+      help: Internal or external shelf - 1.3.6.1.4.1.91919191.1.3.8.2.1.5
+      indexes:
+      - labelname: baumStatsJbodIndex
+        type: gauge
+    - name: baumStatsJbodDiskCount
+      oid: 1.3.6.1.4.1.91919191.1.3.8.2.1.6
+      type: counter
+      help: Number of disks in a shelf - 1.3.6.1.4.1.91919191.1.3.8.2.1.6
+      indexes:
+      - labelname: baumStatsJbodIndex
+        type: gauge
+    - name: baumStatsJbodCoolerIndex
+      oid: 1.3.6.1.4.1.91919191.1.3.8.3.1.1
+      type: gauge
+      help: Index cooler of jbod stats - 1.3.6.1.4.1.91919191.1.3.8.3.1.1
+      indexes:
+      - labelname: baumStatsJbodIndex
+        type: gauge
+      - labelname: baumStatsJbodCoolerIndex
+        type: gauge
+    - name: baumStatsJbodCoolerName
+      oid: 1.3.6.1.4.1.91919191.1.3.8.3.1.2
+      type: DisplayString
+      help: Name cooler of jbod - 1.3.6.1.4.1.91919191.1.3.8.3.1.2
+      indexes:
+      - labelname: baumStatsJbodIndex
+        type: gauge
+      - labelname: baumStatsJbodCoolerIndex
+        type: gauge
+    - name: baumStatsJbodCoolerStatus
+      oid: 1.3.6.1.4.1.91919191.1.3.8.3.1.3
+      type: counter
+      help: Status cooler of jbod stats - 1.3.6.1.4.1.91919191.1.3.8.3.1.3
+      indexes:
+      - labelname: baumStatsJbodIndex
+        type: gauge
+      - labelname: baumStatsJbodCoolerIndex
+        type: gauge
+    - name: baumStatsJbodCoolerRPM
+      oid: 1.3.6.1.4.1.91919191.1.3.8.3.1.4
+      type: counter
+      help: Speed cooler of jbod stats - 1.3.6.1.4.1.91919191.1.3.8.3.1.4
+      indexes:
+      - labelname: baumStatsJbodIndex
+        type: gauge
+      - labelname: baumStatsJbodCoolerIndex
+        type: gauge
+    - name: baumStatsJbodPSUIndex
+      oid: 1.3.6.1.4.1.91919191.1.3.8.4.1.1
+      type: gauge
+      help: Index psu of jbod stats - 1.3.6.1.4.1.91919191.1.3.8.4.1.1
+      indexes:
+      - labelname: baumStatsJbodIndex
+        type: gauge
+      - labelname: baumStatsJbodPSUIndex
+        type: gauge
+    - name: baumStatsJbodPSUName
+      oid: 1.3.6.1.4.1.91919191.1.3.8.4.1.2
+      type: DisplayString
+      help: Name psu of jbod - 1.3.6.1.4.1.91919191.1.3.8.4.1.2
+      indexes:
+      - labelname: baumStatsJbodIndex
+        type: gauge
+      - labelname: baumStatsJbodPSUIndex
+        type: gauge
+    - name: baumStatsJbodPSUStatus
+      oid: 1.3.6.1.4.1.91919191.1.3.8.4.1.3
+      type: counter
+      help: Status psu of jbod stats - 1.3.6.1.4.1.91919191.1.3.8.4.1.3
+      indexes:
+      - labelname: baumStatsJbodIndex
+        type: gauge
+      - labelname: baumStatsJbodPSUIndex
+        type: gauge
+    - name: baumStatsDisksCount
+      oid: 1.3.6.1.4.1.91919191.1.3.9.1
+      type: counter
+      help: Count of all disks - 1.3.6.1.4.1.91919191.1.3.9.1
+    - name: baumStatsDisksIndex
+      oid: 1.3.6.1.4.1.91919191.1.3.9.2.1.1
+      type: gauge
+      help: Index of disk - 1.3.6.1.4.1.91919191.1.3.9.2.1.1
+      indexes:
+      - labelname: baumStatsDisksIndex
+        type: gauge
+    - name: baumStatsDisksName
+      oid: 1.3.6.1.4.1.91919191.1.3.9.2.1.2
+      type: DisplayString
+      help: Name of disk - 1.3.6.1.4.1.91919191.1.3.9.2.1.2
+      indexes:
+      - labelname: baumStatsDisksIndex
+        type: gauge
+    - name: baumStatsDisksCurrentTemp
+      oid: 1.3.6.1.4.1.91919191.1.3.9.2.1.3
+      type: counter
+      help: Current temperature disk - 1.3.6.1.4.1.91919191.1.3.9.2.1.3
+      indexes:
+      - labelname: baumStatsDisksIndex
+        type: gauge
+    - name: baumStatsDisksThresholdTemp
+      oid: 1.3.6.1.4.1.91919191.1.3.9.2.1.4
+      type: counter
+      help: Threshold temperature disk - 1.3.6.1.4.1.91919191.1.3.9.2.1.4
+      indexes:
+      - labelname: baumStatsDisksIndex
+        type: gauge
+    - name: baumStatsNodeAIDCount
+      oid: 1.3.6.1.4.1.91919191.1.3.10.1
+      type: counter
+      help: Count node for used a_id - 1.3.6.1.4.1.91919191.1.3.10.1
+    - name: baumStatsNodeAIDIndex
+      oid: 1.3.6.1.4.1.91919191.1.3.10.2.1.1
+      type: gauge
+      help: Index of node for used a_id - 1.3.6.1.4.1.91919191.1.3.10.2.1.1
+      indexes:
+      - labelname: baumStatsNodeAIDIndex
+        type: gauge
+    - name: baumStatsNodeAIDNodeID
+      oid: 1.3.6.1.4.1.91919191.1.3.10.2.1.2
+      type: counter
+      help: Node ID for used a_id - 1.3.6.1.4.1.91919191.1.3.10.2.1.2
+      indexes:
+      - labelname: baumStatsNodeAIDIndex
+        type: gauge
+    - name: baumStatsNodeAIDUsedAID
+      oid: 1.3.6.1.4.1.91919191.1.3.10.2.1.3
+      type: counter
+      help: used a_id - 1.3.6.1.4.1.91919191.1.3.10.2.1.3
+      indexes:
+      - labelname: baumStatsNodeAIDIndex
+        type: gauge
