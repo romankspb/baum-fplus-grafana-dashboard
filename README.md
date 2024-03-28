@@ -1,6 +1,6 @@
 # Grafana Dashboard для СХД BAUMSTORAGE F+ Tech
 
-## Настройка сбора SNMP метрик с СХД
+## Настройка сбора метрик с СХД по протоколу SNMP
 
 ### Создание конфигарации для snmp_exporter
 
