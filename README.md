@@ -81,7 +81,7 @@ WantedBy=multi-user.target
 
 ```
 $ sudo groupadd prometheus
-$ useradd -g prometheus -s /sbin/nologin prometheus
+$ sudo useradd -g prometheus -s /sbin/nologin prometheus
 $ sudo systemctl daemon-reload
 $ sudo systemctl enable --now snmp_exporter
 ```
