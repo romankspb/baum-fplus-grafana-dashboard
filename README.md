@@ -59,7 +59,9 @@ ts=2024-03-28T10:09:05.572Z caller=main.go:93 level=info msg="Config written" fi
 
 2. Конфигурационный файл экспортера snmp.yml скопируйте из дистрибутива в директорию /etc/prometheus_snmp_exporter
 
-3. Создайте systemd unit файл /etc/systemd/system/snmp_exporter.service
+3. В ту же директорию скопируйте второй конфигурационный файл экспортера - snmp-baum.yml
+
+4. Создайте systemd unit файл /etc/systemd/system/snmp_exporter.service
 
 ```
 [Unit]
