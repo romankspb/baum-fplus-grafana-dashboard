@@ -68,8 +68,6 @@ ts=2024-03-28T10:09:05.572Z caller=main.go:93 level=info msg="Config written" fi
 Description=SNMP Exporter
 After=network-online.target
 
-# This assumes you are running snmp_exporter under the user "prometheus"
-
 [Service]
 User=prometheus
 Restart=on-failure
@@ -82,6 +80,8 @@ WantedBy=multi-user.target
 4. Запустите snmp_exporter
 
 ```
+$ sudo groupadd prometheus
+$ useradd -g prometheus -s /sbin/nologin prometheus
 $ sudo systemctl daemon-reload
 $ sudo systemctl enable --now snmp_exporter
 ```
