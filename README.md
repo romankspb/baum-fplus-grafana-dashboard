@@ -1,6 +1,6 @@
 # Grafana Dashboard для СХД BAUMSTORAGE F+ Tech
 
-## Настройка
+## Настройка сбора SNMP метрик с СХД
 
 ### Создание конфигарации для snmp_exporter
 
@@ -13,13 +13,13 @@ git clone https://github.com/prometheus/snmp_exporter.git
 2. Скачать в директорию ./snmp_exporter/generator/mibs-mibs файл BAUM-MIB.txt из WebUI СХД
 
 <br>
-<img src="img/01_BAUM-MIB.png" width="40%" height="40%">
+<img src="img/01_BAUM-MIB.png" width="100%" height="100%">
 <br>
 
 3. Используя любой MIB браузер, подготовить конфигурацию для SNMP Exporter Generator и сохранить её в файл ./snmp_exporter/generator/generator-baum.yml)
 
 <br>
-<img src="img/02_MIB-Browser.png" width="40%" height="40%">
+<img src="img/02_MIB-Browser.png" width="100%" height=100%">
 <br>
 
 generator-baum.yml
