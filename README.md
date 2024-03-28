@@ -10,7 +10,7 @@
 git clone https://github.com/prometheus/snmp_exporter.git
 ```
 
-2. Скачать в директорию ./snmp_exporter/generator/mibs-mibs файл BAUM-MIB.txt из WebUI СХД
+2. Скачать в директорию ./snmp_exporter/generator/mibs-baum файл BAUM-MIB.txt из WebUI СХД
 
 <br>
 <img src="img/01_BAUM-MIB.png" width="100%" height="100%">
