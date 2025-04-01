@@ -1,4 +1,4 @@
-# Grafana Dashboard для СХД BAUMSTORAGE F+ Tech
+# Grafana Dashboard для СХД BAUM STORAGE F+ Tech
 
 ## Настройка сбора метрик с СХД по протоколу SNMP
 
@@ -128,4 +128,4 @@ scrape_configs:
         env: backup_storage
 ```
 
-2. Импортируйте файл dashboard-baum.json в графану
+2. Импортируйте файл dashboard-baum.json в Grafana
